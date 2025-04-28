@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import permissions  # Добавьте этот импорт
+from rest_framework import permissions
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from drf_yasg.views import get_schema_view
@@ -33,7 +33,7 @@ schema_view = get_schema_view(
         license=openapi.License(name="BSD License"),
     ),
     public=True,
-    permission_classes=(permissions.AllowAny,),  # Добавьте эту строку
+    permission_classes=(permissions.AllowAny,),
 )
 
 urlpatterns = [
