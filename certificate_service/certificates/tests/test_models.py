@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.core.exceptions import ValidationError
-from certificates.models import User, School, Skill, Role, Internship, Certificate
+from ..models import User, School, Skill, Role, Internship, Certificate
 from datetime import date, timedelta
 import uuid
 
